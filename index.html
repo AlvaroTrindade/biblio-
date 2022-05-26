@@ -19,26 +19,39 @@
 
 
 
-    <header>
-        <nav class="nav-bar container-fluid">
+    <header id="header">
+
+        <nav id="nav" class="nav-bar container-fluid">
             <div class="row nav-superior">
-                <div class="navbar-logo col-lg-2 col-md-6 col-sm-12 coll ">
+                <div class="d-flex navbar-logo col-lg-2 col-md-6 col-sm-12 coll ">
                     <a href="index.html"><img class="img-logo" src="img/logo_completa.png" alt=""></a>
+                    <button class="col-sm-3" aria-label="Abrir Menu" id="btn-mobile" aria-haspopup="true" aria-controls="menu" aria-expanded="false">
+                        <a href="index.html"><img class="user-img user-mobile" src="img/user.png" alt=""></a>
+                        <span id="hamburger"></span>
+                       
+                      </button>
+
+
                 </div>
+                <!-- <div class="col-lg-0 col-md-0 col-sm-1">
+                </div> -->
 
                 <div class="col-lg-4 col-md-5 col-sm-12 coll pt-4">
                     <form class="d-flex">
                         <input class="form-control me-2" type="search" placeholder="Pesquisar livros" aria-label="Search">
                         <button class="btn btn-outline-light" type="submit"><i class="bi bi-search"></i></button>
-                        <a href="index.html"><img class="user-img" src="img/user.png" alt=""></a>
+                        <a href="index.html"><img class="user-img user-desktop" src="img/user.png" alt=""></a>
                     </form>
                 </div>
             </div>
-            <div class="navbar-itens row pt-1 pb-2">
-                <div class="col-lg-2 col-md-4 gy-1 coll nav-item">Home</div>
-                <div class="col-lg-2 col-md-4 gy-1 coll nav-item">Consultar acervo</div>
-                <div class="col-lg-2 col-md-4 gy-1 coll nav-item">Comunidade</div>
-                <div class="col-lg-2 col-md-4 gy-1 coll nav-item">Avisos</div>
+            <div class=" navbar-itens pt-1 pb-1">
+                <ul id="menu" class="menu row">
+                    <li class="col-lg-2 col-md-2 gy-1 coll nav-item"><a href="index.html">Home</a></li>
+                    <li class="col-lg-2 col-md-2 gy-1 coll nav-item"><a href="index.html">Home</a></li>
+                    <li class="col-lg-2 col-md-2 gy-1 coll nav-item"><a href="index.html">Home</a></li>
+                    <li class="col-lg-2 col-md-2 gy-1 coll nav-item"><a href="index.html">Home</a></li>
+
+                </ul>
             </div>
         </nav>
 
@@ -50,7 +63,7 @@
         <div class="fundo">
             <div class="container-fluid">
                 <div class="row">
-                    <div class="col-1 coll"></div>
+                    <div class="col-lg-1"></div>
                     <div class="fundo_conteudo gy-3 p-5 col-lg-10 coll">
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, dolore! Dolor molestias aliquam laboriosam explicabo expedita unde dolorem quis omnis, est repellendus nesciunt nobis eligendi maxime ipsam soluta magnam, quos blanditiis.
                             Odio ipsam vitae est, provident repudiandae at quo blanditiis iusto repellendus deserunt nostrum natus beatae tempora debitis eveniet obcaecati quam accusantium dolore. Laboriosam aspernatur sit officiis nostrum dolore magnam
@@ -87,7 +100,7 @@
                             nisi consequuntur! Sed illum totam a fuga inventore, architecto minima veniam maxime obcaecati voluptatibus exercitationem ut, nostrum dolor esse eos vel nam assumenda quo dolore adipisci asperiores hic! Illum illo in voluptates,
                             rem reiciendis maxime saepe.</p>
                     </div>
-                    <div class="col-1 coll"></div>
+                    <div class="col-lg-1"></div>
                 </div>
             </div>
         </div>
@@ -111,5 +124,7 @@
         </article>
     </footer>
 
+    <script type="text/javascript" src="js/javascript.js"></script>
+</body>
 
 </html>
